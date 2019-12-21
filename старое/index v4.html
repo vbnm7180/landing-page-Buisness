@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Макет бизнес-сайта</title>
+    <meta charset="utf-8">
+    <style>
+    body {
+        margin:0px;
+        padding:0px;
+    }
+    nav {
+        display:grid;
+        position:static;
+        width:1700px;
+        height:94px;
+        background-color: #ffffff;
+        grid-template: 
+        ". . . . . . . . . . ." 24px
+        ". logo_png . . . . . . . . ." 6px
+        ". logo_png . nav_home nav_service nav_about_us nav_pricing_table nav_how_it_work nav_happy_clients nav_contact_us ."34px
+        ". logo_png . . . . . . . . ." 7px
+        ". . . . . . . . . . ." 23px
+        / 268px 50px 313px 81px 94px 104px 139px 132px 141px 121px 257px;
+    }
+
+    .nav_elem {
+        font-family: 'Lato', sans-serif;
+        font-size:10px;
+        text-align:center;
+        color:#868686;
+        font-weight: 600;
+        letter-spacing :1px;
+        border-radius:2px;
+        padding-top:12px;
+        cursor:pointer;
+
+    }
+
+    .nav_elem:hover {
+        background-color:#ffbb42;
+        color:#ffffff;
+
+    }
+
+    #home {
+        display:grid;
+        position:static;
+        width:1700px;
+        height:306px;
+        background-color: #709dca;
+        grid-template: 
+        ". . . . . . . . ." 102px
+        ". home_text_boost home_text_boost home_text_boost home_text_boost home_text_boost home_text_boost home_text_boost ." 38px
+        ". home_text_lorem home_text_lorem home_text_lorem home_text_lorem home_text_lorem home_text_lorem home_text_lorem ." 25px
+        ". . . . . . . . ." 29px
+        ". home_name . home_email . home_phone . home_submit ." 46px
+        ". . . . . . . . ." 66px
+        / 305px 281px 9px 281px 9px 281px 9px 210px 315px
+    }
+    
+    #home_text_boost {
+        color:#ffffff;
+        font-family:'Gotham Black', sans-serif;
+        font-size:24px;
+        text-align:center;
+        padding-top:7px;
+        font-weight: 900;
+    }
+
+    #home_text_lorem {
+        color:#ffffff;
+        font-family:'Open Sans Light', sans-serif;
+        font-size:16px;
+        text-align:center;
+        padding-top:4px;
+    }
+
+
+
+    .home_input {
+        background-color:#ffffff;
+        background-position: left;
+        background-repeat: no-repeat;
+        color:black;
+        font-family:'Open Sans', sans-serif;
+        font-size:12px;
+        text-align:left;
+        padding-top:5px;
+        padding-left:40px;
+        border-radius:5px;
+        border:none;
+
+    }
+
+    .home_input::-webkit-input-placeholder {
+        color:#a9a9a9;
+        font-family:'Open Sans', sans-serif;
+        font-size:10px;
+        text-align:left;
+        padding-top:5px;
+    }
+
+    #home_submit {
+        background-color:#ffbb42;
+        color:#ffffff;
+        font-family: 'Open Sans', sans-serif;
+        font-size:12px;
+        font-weight: 400;
+        border-radius:5px;
+        border:none;
+        cursor:pointer;
+    }
+
+    #home_laptop_top1 {
+        display:grid;
+        position:static;
+        background-color: #709dca;
+        width:1700px;
+        height:281px;
+        grid-template:
+        ". . . laptop_top . . ." 138px
+        ". arrow_left . laptop_top . arrow_right ." 14px
+        ". . . laptop_top . . ." 127px
+        / 567px 9px 32px 483px 32px 9px 568px
+    }
+
+    #home_laptop_bottom1 {
+        display:grid;
+        position:static;
+        background-color: #ffffff;
+        width:1700px;
+        height:100px;
+        grid-template:
+
+        ". laptop_bottom laptop_bottom laptop_bottom laptop_bottom laptop_bottom laptop_bottom laptop_bottom ." 84px
+        ". . blue_circle . grey_circle1 . grey_circle2 . ." 16px
+        / 526px 296px 15px 5px 15px 5px 15px 293px 532px  
+    }
+
+    #blue_circle {
+        border-radius: 15px;
+        border-style: solid;
+        border-color:#709dca;
+        cursor:pointer;
+    }
+
+    .grey_circle {
+        border-radius: 15px;
+        border-style: solid;
+        border-color:#a9a9a9;
+        cursor:pointer;
+    }
+
+    #services_heading {
+        margin: 0px;
+        padding: 0px;
+        height:238px;
+        width:1700px;
+        display:flex;
+        color: #394b50;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #services_text_our {
+        font-family: 'Gotham Black', sans-serif;
+        font-size:20px;
+        align-self: center;
+    }
+
+    #services_text_lorem {
+        font-family: 'Open Sans', sans-serif;
+        font-size:16px;
+        align-self: center;
+    }
+
+    #services_content{
+        display:grid;
+        height: 593px;
+        width:1700px;
+        grid-template: 
+        ". service_icon1 service_block1 . service_icon4 service_block4 ." 106px
+        ". . . . . . ." 60px
+        ". service_icon2 service_block2 . service_icon5 service_block5 ." 108px
+        ". . . . . . ." 58px
+        ". service_icon3 service_block3 . service_icon6 service_block6 ." 110px
+        ". . . . . . ." 151px
+       / 253px 79px 458px 76px 73px 491px 270px
+    }
+
+    .services_content_heading {
+        font-family: 'Lato Bold', sans-serif;
+        font-size: 12px;
+        color:#394b50;
+        font-weight: 700;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 21px;
+    }
+
+    .services_content_text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        color:#7b7b7b;
+
+
+    }
+
+    #about_us_content{
+        display:grid;
+        height: 623px;
+        width:1700px;
+        background-color: #ffc155;
+        grid-template: 
+        "about_us_image . . ." 162px
+        "about_us_image. about_us_block ." 290px
+        "about_us_image . . ." 171px
+        / 850px 76px 509px 265px
+
+    }
+
+    #about_us_heading {
+        color:#ffffff;
+        font-family:'Gotham Black', sans-serif;
+        font-size:24px;
+
+    }
+
+    #about_us_text {
+        color:#ffffff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+
+    }
+
+    #about_us_button {
+        background-color: #ffc155;
+        border-style: solid;
+        border-color:#e7ad48;
+        color:#ffffff;
+        font-family: 'Open Sans', sans-serif;
+        font-size:12px;
+        font-weight: 400;
+        border-radius: 2px;
+        cursor:pointer;
+        height:46px;
+        width:145px;
+        border-width: 1px;
+        margin-top:32px;
+    }
+
+
+
+    </style>
+
+    <script>
+    </script>
+</head>
+
+<body>
+
+</body>
+<nav>
+    <img style="grid-area:logo_png;" src="images/logo.png">
+    <div class="nav_elem" style="grid-area:nav_home;">HOME</div>
+    <div class="nav_elem" style="grid-area:nav_service;">SERVICE</div>
+    <div class="nav_elem" style="grid-area:nav_about_us;">ABOUT US</div>
+    <div class="nav_elem" style="grid-area:nav_pricing_table;">PRICING TABLE</div>
+    <div class="nav_elem" style="grid-area:nav_how_it_work;">HOW IT WORK</div>
+    <div class="nav_elem" style="grid-area:nav_happy_clients;">HAPPY CLIENTS</div>
+    <div class="nav_elem" style="grid-area:nav_contact_us;">CONTACT US</div>
+</nav>
+<article id="home">
+    <div id="home_text_boost" style="grid-area:home_text_boost" >BOOST UP YOUR LOCAL BUISNESS</div>
+    <div id="home_text_lorem" style="grid-area:home_text_lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</div>
+        <input type="text" class="home_input" placeholder="Full Name"  style="grid-area:home_name; background-image: url(images/icon_name.png)"">
+        <input type="email" class="home_input" placeholder="Email Address"  style="grid-area:home_email; background-image: url(images/icon_email.png)">
+        <input type="tel" class="home_input" placeholder="Phone Number"  style="grid-area:home_phone; background-image: url(images/icon_phone.png)">
+        <input type="submit" id="home_submit" style="grid-area:home_submit" value="REQUEST A QUOTE">
+</article>
+
+<article id="home_laptop_top1">
+<img src="images/laptop_top1.png" style="grid-area:laptop_top">
+<img src="images/arrow_left.png" style="grid-area:arrow_left; cursor:pointer;">
+<img src="images/arrow_right.png" style="grid-area:arrow_right; cursor:pointer;">
+</article>
+
+
+<article id="home_laptop_bottom1">
+<img src="images/laptop-bottom.png" style="grid-area:laptop_bottom">
+<div id="blue_circle" style="grid-area:blue_circle"></div>
+<div class="grey_circle" style="grid-area:grey_circle1"></div>
+<div class="grey_circle" style="grid-area:grey_circle2"></div>
+</article>
+
+<h1 id="services_heading">
+    <span id="services_text_our">OUR SERVICES</span>
+    <span id="services_text_lorem">Lorem Ipsum is simply dummy Business industry.</span>
+</h1>
+
+<article id="services_content">
+<img src="images/service_icon1.png" style="grid-area: service_icon1; ">
+<div style="grid-area: service_block1;"><h1 class="services_content_heading">FONT-AWESOME ICONS</h1>
+    <span class="services_content_text">Lorem Ipsum is simply dummy text of the printing and typesetting ind<br>
+            ustry. Lorem Ipsum has been the industry's standard dummy text ever<br> 
+            since the 1500s, when an unknown printer.</span>
+</div>
+<img src="images/service_icon2.png" style="grid-area: service_icon2; ">
+<div style="grid-area: service_block2;"><h1 class="services_content_heading">WORKING CONTACT FORM</h1>
+    <span class="services_content_text">Many desktop publishing packages and web page editors now use Lorem<br> 
+        Ipsum as their default model text, and a search for 'lorem ipsum' will un<br>
+            cover many web sites still in their infancy.</span>
+</div>
+<img src="images/service_icon3.png" style="grid-area: service_icon3; ">
+<div style="grid-area: service_block3;"><h1 class="services_content_heading">FRIENDLY CODE</h1>
+    <span class="services_content_text">Finibus Bonorum et Malorum" by Cicero are also reproduced in their<br> 
+            exact original form, accompanied by English versions from the 1914<br> 
+            translation by H. Rackham.</span>
+</div>
+<img src="images/service_icon4.png" style="grid-area: service_icon4; ">
+<div style="grid-area: service_block4"><h1 class="services_content_heading">FULLY RESPONSIVE DESIGN</h1>
+    <span class="services_content_text">Many desktop publishing packages and web page editors now use Lorem<br>
+         Ipsum as their default model text, and a search for 'lorem ipsum' will uncover<br>
+          many web sites still in their infancy.</span>
+</div>
+<img src="images/service_icon5.png" style="grid-area: service_icon5; ">
+<div style="grid-area: service_block5"><h1 class="services_content_heading">RETINA READY ICONS HERE</h1>
+    <span class="services_content_text">There are many variations of passages of Lorem Ipsum available, but the<br>
+         majority have suffered alteration in some form, by injected humour<br>
+            or randomised words which don't look even slightly believable.</span>
+</div>
+<img src="images/service_icon6.png" style="grid-area: service_icon6; ">
+<div style="grid-area: service_block6"><h1 class="services_content_heading">FLAT TRENDY LANDING PAGE DESIGN</h1>
+    <span class="services_content_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
+        Lorem Ipsum has been the industry's standard dummy text ever since<br>
+            the 1500s, when an unknown printer.</span>
+</div>
+</article id="services_content">
+
+<article id="about_us_content">
+<img style="grid-area: about_us_image;" src="images/about_us.png">
+<div style="grid-area:about_us_block"><h1 id="about_us_heading">ABOUT US</h1>
+    <span id="about_us_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem<br> 
+         Ipsum has been the industry's standard dummy text ever since the 1500s, when an<br> 
+          unknown printer took a galley of type and scrambled it to make a type specimen<br> 
+           book. It has survived not only five centuries, but also the leap into electronic<br> 
+            typesetting, remaining essentially unchanged. It was popularised in the ore recently<br> 
+             with desktop publishing software like Aldus PageMaker including versions of Lorem<br> 
+              Ipsum<br></span>
+            <button id="about_us_button">READ MORE</button>
+            </div>
+
+
+    </article>
+
+</html>
+
+<!--Комментарий --> 
